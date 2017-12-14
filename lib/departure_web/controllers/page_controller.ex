@@ -24,7 +24,7 @@ defmodule DepartureWeb.PageController do
           case Integer.parse col do
             :error    -> {:error, col}
             {time, _} -> 
-              case time > 1000000 do
+              case i === 3 do
                 false -> {:error, col}
                 true  -> 
                   time 

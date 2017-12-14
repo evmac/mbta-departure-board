@@ -30,11 +30,11 @@
     <thead>
       <tr>
         <th scope='col'>Carrier</th>
-        <th scope='col'>Train#</th>
+        <th scope='col'>Trip</th>
         <th scope='col'>Destination</th>
         <th scope='col'>Time</th>
         <th scope='col'>Lateness</th>
-        <th scope='col'>Track#</th>
+        <th scope='col'>Track</th>
         <th scope='col'>Status</th>
       </tr>
     </thead>

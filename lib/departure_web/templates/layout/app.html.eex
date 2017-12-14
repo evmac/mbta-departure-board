@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Departures</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <header>
+        <div class="col">
+          Departure Board
+        </div>
+      </header>
+      <main class="main">
+        <%= render @view_module, @view_template, assigns %>
+      </main>
+      <footer class="col">
+        <div>Evan MacGregor. Hosted on DigitalOcean.</div>
+        <div>Running on Elixir and Phoenix. Source: https://github.com/evmac/departure</div>
+      </footer>
+    </div>
+  </body>
+</html>

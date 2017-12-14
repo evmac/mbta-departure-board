@@ -1,0 +1,52 @@
+<div class='page-content'>
+  <date class='col-xs-6'><%= @date %></date>
+  <time class='col-xs-6'><%= @time %></time>
+  <table id='north-station-board' class='table table-sm table-responsive board'>
+    <caption>North Station</caption>
+    <thead>
+      <tr>
+        <th scope='col'>Carrier</th>
+        <th scope='col'>Trip</th>
+        <th scope='col'>Destination</th>
+        <th scope='col'>Time</th>
+        <th scope='col'>Lateness</th>
+        <th scope='col'>Track</th>
+        <th scope='col'>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    <%= for row <- @data, Enum.member?(row, "North Station") do %>
+      <tr>
+        <td>MBTA</td>
+        <%= for col <- row, col !== "North Station" do %>
+          <td><%= col %></td>
+        <% end %>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <table id='south-station-board' class='table table-sm table-responsive board'>
+    <caption>South Station</caption>
+    <thead>
+      <tr>
+        <th scope='col'>Carrier</th>
+        <th scope='col'>Train#</th>
+        <th scope='col'>Destination</th>
+        <th scope='col'>Time</th>
+        <th scope='col'>Lateness</th>
+        <th scope='col'>Track#</th>
+        <th scope='col'>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    <%= for row <- @data, Enum.member?(row, "South Station") do %>
+      <tr>
+        <td>MBTA</td>
+        <%= for col <- row, col !== "South Station" do %>
+          <td><%= col %></td>
+        <% end %>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

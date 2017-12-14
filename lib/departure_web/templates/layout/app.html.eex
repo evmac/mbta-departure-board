@@ -26,7 +26,7 @@
       </main>
       <footer class="col">
         <div>Evan MacGregor. Hosted on DigitalOcean.</div>
-        <div>Running on Elixir and Phoenix. Source: https://github.com/evmac/departure</div>
+        <div>Running on Elixir and Phoenix. Source: https://github.com/evmac/mbta-departure-board</div>
       </footer>
     </div>
   </body>
